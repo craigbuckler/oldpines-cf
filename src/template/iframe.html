@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="${ tacs.config.language }" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>${ data.title || tacs.config.title }</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,interactive-widget=overlays-content">
+
+<!-- style -->
+<style>
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+#bookingWidget footer { display: none; }
+</style>
+
+<!-- meta -->
+<meta name="description" content="${ data.description || tacs.config.description }">
+<meta name="keywords" content="${ data.keywords ? data.keywords + ', ' : '' }${ tacs.config.keywords}">
+<meta name="page-topic" content="${ data.description || tacs.config.description }">
+<meta name="author" content="${ data.author || tacs.config.author }">
+<meta name="owner" content="${ data.author || tacs.config.author }">
+<meta name="revisit-after" content="7 days" />
+<link rel="canonical" href="${ tacs.config.domain }${ data.link }">
+
+<!-- feeds -->
+<meta name="robots" content="${ tacs.config.isDev ? 'noindex,nofollow' : 'index,follow' }">
+<link rel="sitemap" type="application/xml" href="${ tacs.config.domain }${ tacs.root }sitemap.xml">
+<link rel="sitemap" type="text/plain" href="${ tacs.config.domain }${ tacs.root }sitemap.txt">
+
+<!-- application -->
+<meta name="application-name" content="${ tacs.config.title }">
+<meta name="theme-color" content="${ tacs.config.themeColor }">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-title" content="${ tacs.config.title }">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<!-- theme -->
+<link rel="apple-touch-icon" sizes="192x192" href="${ tacs.root }favicon192.png">
+<link rel="icon" type="image/png" sizes="16x16" href="${ tacs.root }favicon.png">
+<link rel="manifest" href="${ tacs.root }site.webmanifest">
+
+<!-- social media -->
+<meta property="og:site_name" content="${ tacs.config.title }">
+<meta property="og:url" content="${ tacs.config.domain }${ data.link }">
+<meta property="og:title" content="${ data.title || tacs.config.title }">
+<meta property="og:description" content="${ data.description || tacs.config.description }">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="${ tacs.config.language }">
+<meta property="og:image" content="${ tacs.config.domain }${ tacs.root }${ data.hero || 'favicon512.png' }">
+<meta name="twitter:card" content="summary_large_image">
+
+</head>
+<body${ data.bodyClass ? ` class="${ data.bodyClass }"` : '' }>
+
+<script src="https://book.caterbook.net/js/main.min.js"></script>
+<div id="bookingWidget" data-embed="MQ==" data-token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJQcm9wZXJ0eUlkIjozOTd9.vdL5hRFe7YD8f2Yr6yb5bF0fP2Fgf88dm0HsMSJE-B4"${ data.roomID ? ` room-id="${ data.roomID }"` : '' }></div>
+
+<script type="module">
+const parent = window.parent;
+
+if (parent) {
+
+  // DOM mutation - alert parent
+  let debounce;
+  const observer = new MutationObserver(() => {
+
+    clearTimeout(debounce);
+    debounce = setTimeout(() => parent.postMessage('update'), 500);
+
+  });
+
+  observer.observe(document.getElementById('bookingWidget'), { attributes: true, childList: true, subtree: true });
+
+}
+</script>
+</body>
+</html>

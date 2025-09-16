@@ -1,0 +1,9 @@
+/* form elements */
+button {
+  display: block;
+  cursor: pointer;
+
+  * {
+    vertical-align: middle;
+  }
+}

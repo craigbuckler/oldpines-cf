@@ -1,0 +1,28 @@
+
+<script type="application/ld+json">{
+"@context": "http://schema.org/",
+"@type": "${ data.link.includes('restaurant') ? 'Restaurant' : 'Hotel' }",
+"name": "${ tacs.config.title }",
+"description": "${ tacs.config.description }",
+"logo": "${ tacs.config.domain }${ tacs.root }favicon512.png",
+"image": "${ tacs.config.domain }${ tacs.root }images/hotel-01.avif",
+"telephone": "+44 (0) 1397 712324",
+"email": "enquiries@oldpines.co.uk",
+"url": "${ tacs.config.domain }${ tacs.root }",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "${ tacs.config.title }",
+"addressLocality": "Spean Bridge",
+"addressRegion": "Inverness-shire, Scotland",
+"postalCode": "PH34 4EG",
+"addressCountry": "GB"
+},
+"potentialAction": {
+"@type":"ReserveAction",
+"target": {
+"@type": "EntryPoint",
+"urlTemplate": "${ tacs.config.domain }${ tacs.root }${ data.link.includes('restaurant') ? 'restaurant/reserve-table/' : 'rooms/booking/' }",
+"actionPlatform": ["http://schema.org/DesktopWebPlatform","http://schema.org/IOSPlatform","http://schema.org/AndroidPlatform"]
+}
+}${ data.link.includes('restaurant') ? ',\n"servesCuisine": [ "Scottish", "British" ]' : '' }
+}</script>

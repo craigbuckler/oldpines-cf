@@ -1,0 +1,58 @@
+/* thumb navigation */
+.thumbnav {
+  position: fixed;
+  inset-inline-end: var(--layout-margin);
+  inset-block-end: 1em;
+
+  ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+  }
+
+  li {
+    padding-block-end: 3px;
+  }
+
+  strong {
+    display: none;
+  }
+
+  a, button {
+
+    &, &:link, &:visited {
+
+      svg {
+        display: block;
+        block-size: 3em;
+        inline-size: 3em;
+        padding: 0.5em;
+        color: var(--color-gdark);
+        background-color: #fff3;
+        border-radius: 5px;
+        box-shadow: 0 2px 3px var(--color-shadow);
+        backdrop-filter: blur(1px);
+        transition: all 0.1s linear;
+      }
+
+    }
+
+    &:hover, &:active, &:focus {
+
+      svg {
+        color: var(--color-gmain);
+        background-color: #fffc;
+      }
+
+    }
+
+  }
+
+}

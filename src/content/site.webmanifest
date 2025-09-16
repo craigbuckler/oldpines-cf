@@ -1,0 +1,27 @@
+---
+index: false
+---
+{
+  "lang"              : "${ tacs.config.language }",
+  "dir"               : "ltr",
+  "name"              : "${ tacs.config.title }",
+  "short_name"        : "${ tacs.config.titleShort }",
+  "description"       : "${ tacs.config.description }",
+  "categories"        : [ "Old Pines", "hotel", "restuarant", "Scotland" ],
+  "scope"             : "${ tacs.root }",
+  "start_url"         : "${ tacs.root }",
+  "display"           : "minimal-ui",
+  "orientation"       : "any",
+  "theme_color"       : "${ tacs.config.themeColor }",
+  "background_color"  : "${ tacs.config.themeColor }",
+  "icons": [
+    { "src": "${ tacs.root }favicon076.png", "type": "image/png", "sizes": "76x76" },
+    { "src": "${ tacs.root }favicon120.png", "type": "image/png", "sizes": "120x120" },
+    { "src": "${ tacs.root }favicon152.png", "type": "image/png", "sizes": "152x152" },
+    { "src": "${ tacs.root }favicon180.png", "type": "image/png", "sizes": "180x180" },
+    { "src": "${ tacs.root }favicon192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "${ tacs.root }favicon310.png", "type": "image/png", "sizes": "310x310" },
+    { "src": "${ tacs.root }favicon512mask.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" },
+    { "src": "${ tacs.root }favicon512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}

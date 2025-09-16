@@ -1,0 +1,47 @@
+/* utility classes */
+.center {
+  max-inline-size: 36rem;
+  text-align: center;
+}
+
+.right {
+  text-align: end;
+}
+
+main button, main a.button {
+  display: block;
+  min-inline-size: 10em;
+  max-inline-size: max-content;
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-block: 0.5em;
+  padding-inline: 1em;
+  margin-inline: auto;
+  color: var(--color-white);
+  background-color: var(--color-gdark);
+  border-radius: 5px;
+
+  &:hover, &:active, &:focus {
+    background-color: var(--color-gmain);
+  }
+}
+
+.flexcenter {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 0;
+  margin-block: 3em;
+
+  & > * {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+}

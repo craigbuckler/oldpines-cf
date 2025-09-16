@@ -1,0 +1,28 @@
+/* sample menu */
+.samplemenu {
+
+  padding-block: 2em;
+  padding-inline: calc(var(--layout-margin) * 1.5);
+  margin-block: 2em;
+  background: 95% 1em / 30% no-repeat url(../images/old-pines.avif) var(--color-beige);
+
+  box-shadow: 0 3px 6px var(--color-shadow);
+
+  & > *:first-child {
+    margin-block-start: 0;
+  }
+
+  h2 {
+    margin-block-start: 1em;
+  }
+
+  hr {
+    inline-size: 70%;
+  }
+
+  em {
+    display: block;
+    padding-inline-start: 2em;
+  }
+
+}

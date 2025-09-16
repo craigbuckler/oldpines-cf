@@ -1,0 +1,64 @@
+<header>
+
+  <a href="${ tacs.root }" class="logo" title="${ tacs.config.title }">
+    <img src="${ tacs.root }images/old-pines.avif" width="500" height="330" alt="${ tacs.config.title }" />
+    <div>
+      <p class="logotitle"><strong>Old Pines</strong><p>
+      <p class="logodesc">HOTEL &amp; RESTAURANT</p>
+    </div>
+  </a>
+
+  <nav class="contact">
+    <ul>
+
+      <li><a href="${ tacs.root }location/" title="${ tacs.config.title } location"><strong>Spean Bridge, Scotland PH34 4EG</strong> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="24" height="24" fill="currentColor"><path d="M172 502C27 291 0 269 0 192a192 192 0 11384 0c0 77-27 99-172 310a24 24 0 01-40 0zm20-230a80 80 0 100-160 80 80 0 000 160z"/></svg></a></li>
+
+      <li><a href="${ tacs.root }contact/" title="contact ${ tacs.config.title }"><strong class="email">enquiries {at} oldpines dot co dot uk</strong> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" width="24" height="24" fill="currentColor"><path d="M10 8.3 19.3.5A2 2 0 0 0 18 0H2A2 2 0 0 0 .6.5L10 8.3Z"/><path d="M11.2 9.8a2 2 0 0 1-1.2.4 2 2 0 0 1-1.2-.4L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.8 7.3Z"/></svg></a></li>
+
+      <li><a href="tel:+44-1397-712324" title="call ${ tacs.config.title }"><strong>+44 1397 712 324</strong> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" fill="currentColor"><path d="M497 362l-112-48a24 24 0 00-28 7l-49 60a371 371 0 01-177-177l60-49a24 24 0 007-28L150 15a24 24 0 00-27-14L19 25A24 24 0 000 48c0 257 208 464 464 464a24 24 0 0023-19l24-104a24 24 0 00-14-27z"/></svg></a></li>
+
+      <li class="menumain-open"><button title="menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24" fill="currentColor"><path d="M16 132h416c9 0 16-7 16-16V76c0-9-7-16-16-16H16C7 60 0 67 0 76v40c0 9 7 16 16 16zm0 160h416c9 0 16-7 16-16v-40c0-9-7-16-16-16H16c-9 0-16 7-16 16v40c0 9 7 16 16 16zm0 160h416c9 0 16-7 16-16v-40c0-9-7-16-16-16H16c-9 0-16 7-16 16v40c0 9 7 16 16 16z"/></svg></button></li>
+
+    </ul>
+  </nav>
+
+  <nav class="book">
+    <ul>
+      <li>${
+        data.link.includes('rooms/booking/') ?
+          `<strong>book room</strong>` :
+          `<a href="${ tacs.root }rooms/booking/">book room</a>`
+      }</li>
+
+      <li>${
+        data.link.includes('reserve-table/') ?
+          `<strong>reserve table</strong>` :
+          `<a href="${ tacs.root }restaurant/reserve-table/">reserve table</a>`
+      }</li>
+
+      <li>${
+        data.link.includes('vouchers/') ?
+          `<strong>gift vouchers</strong>` :
+          `<a href="${ tacs.root }vouchers/">gift vouchers</a>`
+      }</li>
+
+      <li class="menumain-open"><button title="menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24" fill="currentColor"><path d="M16 132h416c9 0 16-7 16-16V76c0-9-7-16-16-16H16C7 60 0 67 0 76v40c0 9 7 16 16 16zm0 160h416c9 0 16-7 16-16v-40c0-9-7-16-16-16H16c-9 0-16 7-16 16v40c0 9 7 16 16 16zm0 160h416c9 0 16-7 16-16v-40c0-9-7-16-16-16H16c-9 0-16 7-16 16v40c0 9 7 16 16 16z"/></svg> <strong>MENU</strong></button></li>
+
+    </ul>
+  </nav>
+
+  <dialog id="menumain">
+
+    <nav>
+
+      <form method="dialog">
+        <button title="close menu" value="cancel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" width="24" height="24" fill="currentColor"><path d="M243 256l100-100c12-12 12-32 0-45l-22-22a31 31 0 00-45 0L176 189 76 89a31 31 0 00-45 0L9 111a31 31 0 000 45l100 100L9 356a31 31 0 000 45l22 22c13 12 33 12 45 0l100-100 100 100c12 12 32 12 45 0l22-22c12-13 12-33 0-45L243 256z"/></svg> <strong>close</strong></button>
+      </form>
+
+      ${ tacs.fn.nav.menuMain( data.link ) }
+
+    </nav>
+
+  </dialog>
+
+</header>

@@ -1,0 +1,102 @@
+/* print styles */
+@media print {
+
+  *,
+  *::before,
+  *::after {
+    font-size: 12px !important;
+    color: #000 !important;
+    background-color: #fff !important;
+    border-color: #888 !important;
+    box-shadow: none !important;
+    text-decoration-color: #888 !important;
+  }
+
+  *::before,
+  *::after {
+    font-size: 10px !important;
+  }
+
+  footer, iframe, video, slide-show, #menumain, .menumain-open, .breadcrumb, .share, .book, .social, .thumbnav, .imagegrid, .flexcenter {
+    display: none !important;
+  }
+
+  main, main > * {
+    inline-size: 100% !important;
+    max-inline-size: none !important;
+    padding-inline: 0 !important;
+    margin-inline: 0 !important;
+  }
+
+  h1 { font-size: 22px !important; margin: 0 !important; }
+  h2 { font-size: 18px !important; }
+  h3 { font-size: 14px !important; }
+
+  main {
+    column-width: 24em;
+    column-gap: 4em;
+    padding-block: 0 !important;
+  }
+
+  header {
+
+    grid-template-columns: 1fr 1fr;
+    padding-block-end: 1em;
+    margin-block-end: 2em;
+    border-block-end: 1px dotted #000;
+
+    a.logo {
+      padding: 0;
+      margin: 0;
+
+      .logotitle, strong {
+        font-size: 50px !important;
+      }
+
+      .logodesc {
+        font-size: 20px !important;
+      }
+    }
+
+    .contact {
+
+      justify-self: end;
+
+      ul {
+        flex-direction: column;
+      }
+
+      svg {
+        inline-size: 1em;
+        block-size: 1em;
+        padding: 0;
+      }
+
+      strong {
+        display: inline-block;
+      }
+
+      a {
+        float: inline-end;
+        padding-block: 0.05em;
+      }
+
+    }
+
+  }
+
+  a:link, a:visited {
+    text-decoration: none;
+  }
+
+  section, aside, nav, blockquote, table, img, picture, figure, svg, li, pre {
+    break-inside: avoid;
+  }
+
+  main a[href^="http"]:not([class])::after {
+    content: " (" attr(href) ")";
+    font-size: 12px !important;
+    font-style: italic;
+  }
+
+}

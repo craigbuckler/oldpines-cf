@@ -1,0 +1,20 @@
+/**
+ * Cloudflare wrangler configuration:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+  "name": "oldpines",
+  "compatibility_date": "2025-09-16",
+  "build": {
+    "command": "npm run build"
+  },
+  "assets": {
+    // build
+    "directory": "./build/",
+    // 404 page (MPA rather than SPA)
+    "not_found_handling": "404-page"
+  },
+  "observability": {
+    "enabled": false
+  }
+}

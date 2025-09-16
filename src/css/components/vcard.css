@@ -1,0 +1,17 @@
+.vcard {
+
+  font-size: var(--fsize-2);
+  text-align: center;
+  margin-block: 2em;
+
+  span {
+    display: block;
+  }
+
+  a:link, a:visited {
+    text-decoration: none;
+  }
+
+  .phone { font-size: var(--fsize-4); }
+
+}

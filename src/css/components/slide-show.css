@@ -1,0 +1,178 @@
+/* hero */
+slide-show {
+  position: relative;
+  display: block;
+  inline-size: 100%;
+  block-size: 50vh;
+  margin: 0;
+  margin-block-end: 5rem;
+  overflow: hidden;
+  background-color: var(--color-gdark);
+
+  iframe, img, video {
+    position: absolute;
+    display: none;
+    inline-size: 100%;
+    block-size: 100%;
+    margin: 0;
+
+    &:only-child {
+      display: block;
+    }
+  }
+
+  iframe {
+    position: relative;
+  }
+
+  img, video {
+    object-fit: cover;
+    object-position: 50% 0%;
+    animation: 5s linear 0s forwards 1 ssnone;
+  }
+
+  video {
+    filter: brightness(1.2);
+  }
+
+}
+
+/* JS disabled */
+@media (scripting: none) {
+
+  slide-show {
+
+    iframe, video { display: none; }
+    img:first-of-type { display: block; }
+
+  }
+
+}
+
+
+/* JS enabled */
+@media (scripting: enabled) {
+
+  slide-show {
+
+    iframe {
+      display: block;
+    }
+
+    img, video {
+      display: none;
+
+      &[data-active] {
+        display: block;
+      }
+
+      &[data-pause] {
+        animation-play-state: paused;
+      }
+
+    }
+
+  }
+
+}
+
+/* animations */
+.ss-tb {
+  object-position: 50% 0%;
+  animation: 10s ease-out 0s forwards 1 sstb;
+}
+
+.ss-tbbasic {
+  object-position: 50% 0%;
+  animation: 10s ease-out 0s forwards 1 sstbbasic;
+}
+
+.ss-bt {
+  object-position: 50% 100%;
+  animation: 10s ease-out 0s forwards 1 ssbt;
+}
+
+.ss-btbasic {
+  object-position: 50% 100%;
+  animation: 10s ease-out 0s forwards 1 ssbtbasic;
+}
+
+.ss-trbl {
+  object-position: 100% 0%;
+  animation: 10s ease-out 0s forwards 1 sstrbl;
+}
+
+.ss-brtl {
+  object-position: 100% 100%;
+  animation: 10s ease-out 0s forwards 1 ssbrtl;
+}
+
+.ss-bltr {
+  object-position: 0% 100%;
+  animation: 10s ease-out 0s forwards 1 ssbltr;
+}
+
+.ss-subtle {
+  object-position: 50% 50%;
+  animation: 5s ease-in-out 0s forwards 1 sssubtle;
+}
+
+.ss-tbsubtle {
+  object-position: 50% 30%;
+  animation: 6s ease-in-out 0s forwards 1 sstbsubtle;
+}
+
+@keyframes ssnone {
+  0% { }
+  100% { }
+}
+
+@keyframes ssfadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes sstb {
+  0% { object-position: 50% 0%; transform: scale(1); }
+  100% { object-position: 50% 100%; transform: scale(1.2); }
+}
+
+@keyframes sstbbasic {
+  0% { object-position: 50% 0%; }
+  100% { object-position: 50% 100%; }
+}
+
+@keyframes ssbt {
+  0% { object-position: 50% 100%; transform: scale(1); }
+  100% { object-position: 50% 0%; transform: scale(1.2); }
+}
+
+@keyframes ssbtbasic {
+  0% { object-position: 50% 100%; }
+  100% { object-position: 50% 0%; }
+}
+
+@keyframes sstrbl {
+  0% { object-position: 100% 0%; transform: scale(1.2); }
+  100% { object-position: 0% 100%; transform: scale(1); }
+}
+
+@keyframes ssbrtl {
+  0% { object-position: 100% 100%; transform: scale(1.2); }
+  100% { object-position: 0% 0%; transform: scale(1); }
+}
+
+@keyframes ssbltr {
+  0% { object-position: 0% 100%; transform: scale(1.2); }
+  100% { object-position: 100% 0%; transform: scale(1); }
+}
+
+@keyframes sssubtle {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+@keyframes sstbsubtle {
+  0% { object-position: 50% 30%; transform: scale(1); }
+  100% { object-position: 50% 70%; transform: scale(1.1); }
+}

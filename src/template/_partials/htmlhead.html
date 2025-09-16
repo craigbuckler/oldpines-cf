@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="${ tacs.config.language }" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>${ data.title || tacs.config.title }</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,interactive-widget=overlays-content">
+
+<!-- Content Security Policy -->
+<meta http-equiv="Content-Security-Policy" content="${ tacs.config.CSP }">
+
+<!-- assets -->
+<link rel="stylesheet" href="${ tacs.root }css/main.css?v=${ tacs.config.version }">
+<script type="module" src="${ tacs.root }js/main.js?v=${ tacs.config.version }"></script>
+
+<!-- meta -->
+<meta name="description" content="${ data.description || tacs.config.description }">
+<meta name="keywords" content="${ data.keywords ? data.keywords + ', ' : '' }${ tacs.config.keywords}">
+<meta name="page-topic" content="${ data.topic || tacs.config.topic }">
+<meta name="author" content="${ data.author || tacs.config.author }">
+<meta name="owner" content="${ data.author || tacs.config.author }">
+<meta name="copyright" content="${ data.author || tacs.config.author }">
+<meta name="revisit-after" content="7 days" />
+<link rel="canonical" href="${ tacs.config.domain }${ data.link }">
+
+<!-- feeds -->
+<meta name="robots" content="${ tacs.config.isDev ? 'noindex,nofollow' : 'index,follow' }">
+<link rel="sitemap" type="application/xml" href="${ tacs.config.domain }${ tacs.root }sitemap.xml">
+<link rel="sitemap" type="text/plain" href="${ tacs.config.domain }${ tacs.root }sitemap.txt">
+
+<!-- application -->
+<meta name="application-name" content="${ tacs.config.title }">
+<meta name="theme-color" content="${ tacs.config.themeColor }">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-title" content="${ tacs.config.title }">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<!-- theme -->
+<link rel="icon" sizes="32x32" href="${ tacs.root }favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="${ tacs.root }favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="${ tacs.root }favicon180.png">
+<link rel="manifest" href="${ tacs.root }site.webmanifest">
+
+<!-- social media -->
+<meta property="og:site_name" content="${ tacs.config.title }">
+<meta property="og:url" content="${ tacs.config.domain }${ data.link }">
+<meta property="og:title" content="${ data.title || tacs.config.title }">
+<meta property="og:description" content="${ data.description || tacs.config.description }">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="${ tacs.config.language }">
+<meta property="og:image" content="${ tacs.config.domain }${ tacs.root }${ data.hero || 'favicon512.png' }">
+<meta name="twitter:card" content="summary_large_image">
+
+</head>
+<body${ data.bodyClass ? ` class="${ data.bodyClass }"` : '' }>

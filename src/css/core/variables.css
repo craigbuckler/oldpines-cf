@@ -1,0 +1,37 @@
+/* default variables */
+:root {
+  --font-body: "ITC Caslon 224", "Times New Roman", Times, serif;
+  --font-head: --var(font-body);
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-head: 700;
+
+  --fsize--1: clamp(0.9375rem, 0.8482rem + 0.3968vw, 1.1458rem);
+  --fsize-0: clamp(1.125rem, 1.0179rem + 0.4762vw, 1.375rem);
+  --fsize-1: clamp(1.35rem, 1.2214rem + 0.5714vw, 1.65rem);
+  --fsize-2: clamp(1.62rem, 1.4657rem + 0.6857vw, 1.98rem);
+  --fsize-3: clamp(1.944rem, 1.7589rem + 0.8229vw, 2.376rem);
+  --fsize-4: clamp(2.3328rem, 2.1106rem + 0.9874vw, 2.8512rem);
+  --fsize-5: clamp(2.7994rem, 2.5328rem + 1.1849vw, 3.4214rem);
+
+  --header-height: 4rem;
+  --layout-width: 55rem;
+  --layout-margin: min(3vw, 3rem);
+  --main-width: min(var(--layout-width), 100% - (2 * var(--layout-margin)));
+
+  --layout-list: 3;
+  --layout-list-gap: 1em;
+  --layout-list-max: min(var(--layout-width) * 2, 100% - (2 * var(--layout-list-gap)));
+  --layout-list-item: max(16rem, 100% / (var(--layout-list) + 1 ));
+
+  --color-white: #fff;
+  --color-glite: #a6cc9f;
+  --color-gmain: #408335;
+  --color-gdark: #1d3b2d;
+  --color-beige: #f4e9b1;
+  --color-brown: #8c632f;
+  --color-black: color-mix(in srgb, var(--color-brown) 50%, #000);
+
+  --color-dark: rgba(0,0,0,0.15);
+  --color-shadow: rgba(0,0,0,0.5);
+}
