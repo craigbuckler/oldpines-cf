@@ -5,6 +5,7 @@
 {
   "name": "oldpines",
   "compatibility_date": "2025-09-16",
+  "workers_dev": false,
   "build": {
     "command": "npm run build"
   },
@@ -16,5 +17,11 @@
   },
   "observability": {
     "enabled": false
-  }
+  },
+  "routes": [
+    {
+      "pattern": "www.oldpines.co.uk",
+      "custom_domain": true
+    }
+  ]
 }
