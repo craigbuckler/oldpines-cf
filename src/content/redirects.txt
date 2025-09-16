@@ -1,0 +1,35 @@
+---
+slug: _redirects
+comment: set HTTP redirects in CloudFlare pages
+---
+/activ*     /location/activities/
+/area*      /location/
+/book*      /rooms/booking/
+/break*     /rooms/
+/breakf*    /restaurant/breakfast/
+/dinner*    /restaurant/dinner/
+/dine*      /restaurant/
+/dir*       /location/
+/eat*       /restaurant/
+/find*      /location/
+/food*      /restaurant/
+/gift*      /vouchers/
+/holi*      /rooms/
+/locat*     /location/
+/lunch*     /restaurant/dinner/
+/mail*      /contact/
+/map*       /location/
+/menu*      /restaurant/
+/offer*     /offers/
+/order*     /restaurant/
+/phone*     /contact/
+/reserv*    /restaurant/reserve-table/
+/room*      /rooms/
+/sample*    /restaurant/dinner/
+/stay*      /rooms/
+/table*     /restaurant/reserve-table/
+/tel*       /contact/
+/todo*      /location/activities/
+/vacat*     /rooms/
+/vegan*     /restaurant/vegan/
+/vouch*     /vouchers/

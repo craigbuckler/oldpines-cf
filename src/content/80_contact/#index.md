@@ -10,7 +10,7 @@ Please contact us to [book a hotel room](--ROOT--rooms/booking/), [book the hous
 
 <div class="vcard" itemscope="itemscope" itemtype="http://schema.org/Organization">
 
-  <p><a href="tel:+44-1397-712324" class="phone tel" title="call us"><span itemprop="telephone">+44 1397 712324</span></a></p>
+  <p><a href="tel:+44-1397-712324" class="phone tel" title="call us"><span itemprop="telephone">+44 1397 712 324</span></a></p>
 
   <p><a href="${ tacs.root }contact/" class="email" title="send us an email"><span itemprop="email">enquiries {at} oldpines dot co dot uk</span></a></p>
 
