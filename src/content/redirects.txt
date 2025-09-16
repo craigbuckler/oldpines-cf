@@ -15,16 +15,16 @@ comment: set HTTP redirects in CloudFlare pages
 /food*      /restaurant/
 /gift*      /vouchers/
 /holi*      /rooms/
-/locat*     /location/
+/house*     /5-bed-self-catering-house/
 /lunch*     /restaurant/dinner/
 /mail*      /contact/
 /map*       /location/
 /menu*      /restaurant/
-/offer*     /offers/
+/offer/*    /offers/
 /order*     /restaurant/
 /phone*     /contact/
 /reserv*    /restaurant/reserve-table/
-/room*      /rooms/
+/room/*     /rooms/
 /sample*    /restaurant/dinner/
 /stay*      /rooms/
 /table*     /restaurant/reserve-table/
@@ -32,4 +32,4 @@ comment: set HTTP redirects in CloudFlare pages
 /todo*      /location/activities/
 /vacat*     /rooms/
 /vegan*     /restaurant/vegan/
-/vouch*     /vouchers/
+/voucher/*  /vouchers/
