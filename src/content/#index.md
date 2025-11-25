@@ -6,6 +6,10 @@ slideshow: hotel
 priority: 1.0
 ---
 
+***Old Pines opens again in April. We are taking bookings for the 2026 season&hellip;***
+
+<p><a href="--ROOT--rooms/booking/" class="button">book for 2026</a></p>
+
 Welcome to Old Pines. We are a small [hotel](--ROOT--rooms/) and [restaurant](--ROOT--restaurant/) set in seven acres of ancient Scots pine trees just north of Spean Bridge, near Fort William, in the Highlands of Scotland with [spectacular views](--ROOT--gallery/) of the Ben Nevis mountain range.
 
 Indulge in freshly-prepared, locally-sourced food, a restful atmosphere in rejuvenating Scottish Highland air.
