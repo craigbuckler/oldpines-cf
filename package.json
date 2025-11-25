@@ -24,10 +24,10 @@
     "start": "node --env-file=.env.dev ./publican.config.js"
   },
   "dependencies": {
-    "esbuild": "0.25.10",
-    "publican": "0.10.2"
+    "esbuild": "0.27.0",
+    "publican": "0.11.0"
   },
   "devDependencies": {
-    "livelocalhost": "1.2.2"
+    "livelocalhost": "1.2.4"
   }
 }
