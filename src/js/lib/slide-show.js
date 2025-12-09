@@ -3,6 +3,8 @@
 */
 
 const config = {
+  reduceMotion: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+  minDelay: 5000,
   datasetActive: 'data-active',
   datasetPause: 'data-pause',
   intersectThreshold: 0.3,
@@ -11,12 +13,11 @@ const config = {
 
 class SlideShow extends HTMLElement {
 
-  constructor() {
-    super();
-  }
-
   // initialise
   connectedCallback() {
+
+    this.inView = true;
+    this.last = +new Date() - config.minDelay * 2;
 
     // only one item or an iframe?
     if (this.children.length < 2 || this.querySelector('iframe')) return;
@@ -40,16 +41,24 @@ class SlideShow extends HTMLElement {
 
         // remove video looping
         i.loop = false;
+        i.playbackRate = 0;
 
-        // speed
-        i.playbackRate = parseFloat(i.dataset.rate || 1);
+        if (!config.reduceMotion) {
 
-        // video playback ended event
-        i.addEventListener('ended', () => this.nextSlide() );
+          // speed
+          i.playbackRate = parseFloat(i.dataset.rate || 1);
+
+          // video playback ended event
+          i.addEventListener('ended', () => this.nextSlide() );
+
+        }
 
       }
 
     });
+
+    // next slide fallback timer
+    setInterval(() => this.nextSlide(), config.minDelay * 2);
 
     // window/tab active?
     document.addEventListener('visibilitychange',
@@ -72,6 +81,11 @@ class SlideShow extends HTMLElement {
 
   // video and/or animation has ended
   nextSlide() {
+
+    // ensure minimum delay
+    const now = +new Date();
+    if (!this.inView || now - this.last < config.minDelay) return;
+    this.last = now;
 
     const
       currentActive = this.#getActive(),
