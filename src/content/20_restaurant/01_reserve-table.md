@@ -28,7 +28,7 @@ Please contact us to reserve a dining table:
 
 ## Restaurant Opening Times
 
-Unfortunately, we do not serve lunch. We are open for tea, coffee, drinks, and cakes all day in the lounge and restaurant area. No booking is required.
+We do not serve lunch but are open for tea, coffee, drinks, and cakes all day in the lounge and restaurant area. No booking is required.
 
 **Afternoon tea** including sandwiches, scones, and homemade cakes is available for &pound;25 per person. Please book at least 24 hours in advance.
 
@@ -51,10 +51,16 @@ Unfortunately, we do not serve lunch. We are open for tea, coffee, drinks, and c
       </a>
     </li>
     <li>
+      <a href="${ tacs.root }vouchers/">
+        <img src="${ tacs.root }images/food-02.avif" width="1600" height="900" alt="${ tacs.config.title } gift vouchers" loading="lazy" />
+        <p>gift vouchers</p>
+      </a>
+    </li>
+    <!-- <li>
       <a href="${ tacs.root }restaurant/vegan/">
         <img src="${ tacs.root }images/food-02.avif" width="1600" height="900" alt="sample vegan menu" loading="lazy" />
         <p>sample vegan menu</p>
       </a>
-    </li>
+    </li> -->
   </ul>
 </nav>

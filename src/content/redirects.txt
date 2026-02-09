@@ -31,5 +31,5 @@ comment: set HTTP redirects in CloudFlare pages
 /tel*       /contact/
 /todo*      /location/activities/
 /vacat*     /rooms/
-/vegan*     /restaurant/vegan/
+/vegan*     /restaurant/
 /voucher/*  /vouchers/

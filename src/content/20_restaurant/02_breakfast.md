@@ -78,10 +78,16 @@ Scrambled eggs served with organic smoked salmon or Great Glen smoked venison. A
       </a>
     </li>
     <li>
+      <a href="${ tacs.root }vouchers/">
+        <img src="${ tacs.root }images/food-02.avif" width="1600" height="900" alt="${ tacs.config.title } gift vouchers" loading="lazy" />
+        <p>gift vouchers</p>
+      </a>
+    </li>
+    <!-- <li>
       <a href="${ tacs.root }restaurant/vegan/">
         <img src="${ tacs.root }images/food-02.avif" width="1600" height="900" alt="sample vegan menu" loading="lazy" />
         <p>sample vegan menu</p>
       </a>
-    </li>
+    </li> -->
   </ul>
 </nav>

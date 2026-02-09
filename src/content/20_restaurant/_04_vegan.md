@@ -51,20 +51,20 @@ Tea, coffee, and petit fours £6
 <nav class="imagegrid full">
   <ul>
     <li>
-      <a href="${ tacs.root }restaurant/reserve-table/">
-        <img src="${ tacs.root }images/hotel-05.avif" width="1600" height="900" alt="reserve a table at Old Pines Restaurant" loading="lazy" />
+      <a href="<${ tacs.root }restaurant/reserve-table>">
+        <img src="<${ tacs.root }images/hotel-05.avif>" width="1600" height="900" alt="reserve a table at Old Pines Restaurant" loading="lazy" />
         <p>reserve table</p>
       </a>
     </li>
     <li>
-      <a href="${ tacs.root }restaurant/breakfast/">
-        <img src="${ tacs.root }images/restaurant-01.avif" width="1600" height="900" alt="sample breakfast menu" loading="lazy" />
+      <a href="<${ tacs.root }restaurant/breakfast>">
+        <img src="<${ tacs.root }images/restaurant-01.avif>" width="1600" height="900" alt="sample breakfast menu" loading="lazy" />
         <p>sample breakfast menu</p>
       </a>
     </li>
     <li>
-      <a href="${ tacs.root }restaurant/dinner/">
-        <img src="${ tacs.root }images/food-01.avif" width="1600" height="900" alt="sample dinner menu" loading="lazy" />
+      <a href="<${ tacs.root }restaurant/dinner>">
+        <img src="<${ tacs.root }images/food-01.avif>" width="1600" height="900" alt="sample dinner menu" loading="lazy" />
         <p>sample dinner menu</p>
       </a>
     </li>

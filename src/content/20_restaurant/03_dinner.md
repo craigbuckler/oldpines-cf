@@ -11,55 +11,55 @@ A typical dinner menu is shown below. Please note that dishes vary with seasons 
 
 ---
 
-Welcome snacks
+## Starter
 
----
-
-Celeriac, truffle, almond, watercress
-
----
-
-Smoked haddock, Jersey Royals, preserved apricot
+Fried Scottish buffalloumi, caramelised grapes, oregano, cullise oil
 
 *OR*
 
-Parsnip, leek, smoked crowdie
-
----
-
-Lamb neck, white turnips, seaweed
+Smoked leeks, brown shrimp, hazelnut butter (gf)
 
 *OR*
 
-Loch Etive trout, Shetland mussels risotto, grape mustard
-
-*OR*
-
-Salt baked turnips, fennel, green apple hummus
+Smoked trout, curried celeriac remoulade, grape (gf)
 
 ---
 
-Pre-dessert
+## Main course
 
----
-
-Rhubarb & custard cannoli
+Market fish, caramelised cauliflower, potato, lemon truffle butter (gf)
 
 *OR*
 
-Chocolate St. Emilion, salt caramel mousse, Cullise oil
+Confit pork belly, white bean cassoulet, caramelised apricot (gf)
 
 *OR*
 
-British cheese, house chutney, savoury shortbread
+Braised onion dolma, roast carrot, sumac, sunflower cream (vegan)
 
 ---
 
-5 courses, £60 per person
+## Dessert
 
-Additional cheese course available as £8 supplement
+Warm apple terrine, cinnamon ripple ice cream
 
-Tea, coffee, and petit fours £6
+*OR*
+
+Coconut semifreddo, passion gazpacho, toasted almonds (vegan, gf)
+
+*OR*
+
+Dark chocolate and lime cheesecake
+
+*OR*
+
+A selection of Scottish cheeses (£8 supplement)
+
+---
+
+£60 per person
+
+Tea and coffee £6
 
 ---
 
@@ -85,10 +85,16 @@ Tea, coffee, and petit fours £6
       </a>
     </li>
     <li>
+      <a href="${ tacs.root }vouchers/">
+        <img src="${ tacs.root }images/food-02.avif" width="1600" height="900" alt="${ tacs.config.title } gift vouchers" loading="lazy" />
+        <p>gift vouchers</p>
+      </a>
+    </li>
+    <!-- <li>
       <a href="${ tacs.root }restaurant/vegan/">
         <img src="${ tacs.root }images/food-02.avif" width="1600" height="900" alt="sample vegan menu" loading="lazy" />
         <p>sample vegan menu</p>
       </a>
-    </li>
+    </li> -->
   </ul>
 </nav>
