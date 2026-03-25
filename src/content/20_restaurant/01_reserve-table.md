@@ -30,7 +30,7 @@ Please contact us to reserve a dining table:
 
 We do not serve lunch but are open for tea, coffee, drinks, and cakes all day in the lounge and restaurant area. No booking is required.
 
-**Afternoon tea** including sandwiches, scones, and homemade cakes is available for &pound;25 per person. Please book at least 24 hours in advance.
+**Afternoon tea** including sandwiches, scones, and homemade cakes is available for &pound;35 per person. Please book at least 24 hours in advance.
 
 **Dinner** is served from 6:00pm to 8:00pm. Residents are guaranteed a table, although we advise you to book if you wish to dine at a specific time.
 

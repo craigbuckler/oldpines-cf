@@ -9,9 +9,13 @@ A typical dinner menu is shown below. Please note that dishes vary with seasons 
 
 {article class=samplemenu}
 
+## Old Pines
+
 ---
 
-## Starter
+Welcome snacks
+
+---
 
 Fried Scottish buffalloumi, caramelised grapes, oregano, cullise oil
 
@@ -25,8 +29,6 @@ Smoked trout, curried celeriac remoulade, grape (gf)
 
 ---
 
-## Main course
-
 Market fish, caramelised cauliflower, potato, lemon truffle butter (gf)
 
 *OR*
@@ -38,8 +40,6 @@ Confit pork belly, white bean cassoulet, caramelised apricot (gf)
 Braised onion dolma, roast carrot, sumac, sunflower cream (vegan)
 
 ---
-
-## Dessert
 
 Warm apple terrine, cinnamon ripple ice cream
 

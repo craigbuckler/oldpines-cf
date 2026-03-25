@@ -6,7 +6,7 @@ slideshow: hotel
 priority: 1.0
 ---
 
-***Old Pines opens again in April. We are taking bookings for the 2026 season&hellip;***
+We are open and taking bookings for the 2026 season&hellip;
 
 <p><a href="--ROOT--rooms/booking/" class="button">book for 2026</a></p>
 
