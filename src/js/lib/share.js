@@ -1,6 +1,6 @@
 // share via app and social media links
 const cfgShare = {
-  selector  : '.share',
+  selector  : '.share,.shareinline',
   appHash   : '#shareapp',
   width     : 800,
   height    : 800,

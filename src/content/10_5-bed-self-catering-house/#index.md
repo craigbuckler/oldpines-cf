@@ -71,4 +71,5 @@ Please [contact us to discuss short term lettings](--ROOT--contact/).
 <ul class="flexcenter">
   <li><a href="--ROOT--5-bed-self-catering-house/booking/" class="button">book house</a></li>
   <li><a href="--VOUCHERS--" class="button">buy voucher</a></li>
+  <li><a href="--SUBSCRIBE--" class="button shareinline">subscribe</a></li>
 </ul>

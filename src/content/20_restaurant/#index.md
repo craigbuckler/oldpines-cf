@@ -55,4 +55,5 @@ A selection of Scots Whisky, ales, beers, wines, cocktails, and other drinks are
 <ul class="flexcenter">
   <li><a href="--ROOT--restaurant/reserve-table/" class="button">reserve table</a></li>
   <li><a href="--VOUCHERS--" class="button">buy voucher</a></li>
+  <li><a href="--SUBSCRIBE--" class="button shareinline">subscribe</a></li>
 </ul>

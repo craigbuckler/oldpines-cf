@@ -50,4 +50,5 @@ Please [contact us to discuss your mobility requirements](--ROOT--contact/).
 <ul class="flexcenter">
   <li><a href="--ROOT--rooms/booking/" class="button">book room</a></li>
   <li><a href="--VOUCHERS--" class="button">buy voucher</a></li>
+  <li><a href="--SUBSCRIBE--" class="button shareinline">subscribe</a></li>
 </ul>
