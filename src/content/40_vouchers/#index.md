@@ -17,7 +17,7 @@ You can [buy Old Pines gift vouchers](--VOUCHERS--) for friends, family, and col
       </a>
     </li>
     <li>
-      <a href="--VOUCHERS--vouchers/5-course-dinner-for-2/">
+      <a href="--VOUCHERS--vouchers/4-course-dinner-for-2/">
         <img src="${ tacs.root }images/food-05.avif" width="1600" height="900" alt="delicious Old Pines food" loading="lazy" />
         <p>dinner for two voucher</p>
       </a>
