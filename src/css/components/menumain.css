@@ -29,8 +29,8 @@
   margin: 0;
   border: 0 none;
   text-transform: uppercase;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow-inline: hidden;
+  overflow-block: auto;
   overscroll-behavior: none;
   color: var(--color-white);
   background-color: var(--color-gdark);

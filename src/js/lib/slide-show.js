@@ -17,7 +17,7 @@ class SlideShow extends HTMLElement {
   connectedCallback() {
 
     this.inView = true;
-    this.last = +new Date() - config.minDelay * 2;
+    this.last = +new Date() - (config.minDelay * 2);
 
     // only one item or an iframe?
     if (this.children.length < 2 || this.querySelector('iframe')) return;

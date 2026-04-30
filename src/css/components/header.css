@@ -3,7 +3,7 @@ header, footer {
 
   display: grid;
   align-items: center;
-  grid-template-columns: min(60vw, 19em) 1fr;
+  grid-template-columns: min(60vi, 19em) 1fr;
   overflow: hidden;
   background-color: var(--color-glite);
 
@@ -45,24 +45,24 @@ a.logo {
   padding-inline-start: var(--layout-margin);
 
   img {
-    inline-size: clamp(80px, 20vw, 160px);
+    inline-size: clamp(80px, 20vi, 160px);
     margin: 0;
   }
 
   p {
     line-height: 0.8;
     margin: 0;
-    margin-inline-start: max(-6vw, -30px);
+    margin-inline-start: max(-6vi, -30px);
   }
 
   .logotitle {
-    font-size: clamp(2.2rem, 1.5rem + 2.7vw, 3.2rem);
+    font-size: clamp(2.2rem, 1.5rem + 2.7vi, 3.2rem);
     color: var(--color-gdark);
   }
 
   .logodesc {
     display: none;
-    font-size: clamp(0.8rem, 0.6rem + 1.1vw, 1.3rem);
+    font-size: clamp(0.8rem, 0.6rem + 1.1vi, 1.3rem);
     color: var(--color-black);
   }
 
@@ -113,7 +113,7 @@ footer {
 .book, .social {
   grid-column-start: span 2;
   background-color: var(--color-gdark);
-  max-inline-size: 100vw;
+  max-inline-size: 100vi;
 
   ul {
     justify-content: center;

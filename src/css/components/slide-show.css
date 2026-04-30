@@ -3,7 +3,7 @@ slide-show {
   position: relative;
   display: block;
   inline-size: 100%;
-  block-size: 50vh;
+  block-size: 50vb;
   margin: 0;
   margin-block-end: 5rem;
   overflow: hidden;
@@ -123,8 +123,8 @@ slide-show {
 }
 
 @keyframes ssnone {
-  0% { }
-  100% { }
+  0% { opacity: 1; }
+  100% { opacity: 1; }
 }
 
 @keyframes ssfadein {
