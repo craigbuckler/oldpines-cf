@@ -1,6 +1,6 @@
 {
   "name": "oldpines",
-  "version": "0.10.3",
+  "version": "0.10.4",
   "description": "Old Pines Hotel & Restaurant website",
   "keywords": [
     "website",
@@ -28,6 +28,6 @@
     "publican": "0.12.1"
   },
   "devDependencies": {
-    "livelocalhost": "1.2.5"
+    "livelocalhost": "1.2.6"
   }
 }
