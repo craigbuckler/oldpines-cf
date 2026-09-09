@@ -1,6 +1,6 @@
 {
   "name": "oldpines",
-  "version": "0.10.4",
+  "version": "0.10.5",
   "description": "Old Pines Hotel & Restaurant website",
   "keywords": [
     "website",
@@ -24,10 +24,13 @@
     "start": "node --env-file=.env.dev ./publican.config.js"
   },
   "dependencies": {
-    "esbuild": "0.28.0",
-    "publican": "0.12.1"
+    "esbuild": "0.28.2",
+    "publican": "0.12.3"
   },
   "devDependencies": {
-    "livelocalhost": "1.2.6"
+    "livelocalhost": "1.2.7"
+  },
+  "allowScripts": {
+    "esbuild": true
   }
 }
