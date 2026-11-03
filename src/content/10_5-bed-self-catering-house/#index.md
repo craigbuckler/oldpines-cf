@@ -64,7 +64,7 @@ Torran-eas can comfortably accommodate ten people on a self-catering basis. You 
   </ul>
 </section>
 
-[Bookings are being taken for 2026](--ROOT--5-bed-self-catering-house/booking/) on a weekly basis arriving Saturdays. The total cost for the house is &pound;3,500 per week. A deposit of &pound;1,000 is required with the balance payable four weeks prior to arrival.
+[Bookings are taken](--ROOT--5-bed-self-catering-house/booking/) on a weekly basis arriving Saturdays. The total cost for the house is &pound;3,500 per week. A deposit of &pound;1,000 is required with the balance payable four weeks prior to arrival.
 
 Please [contact us to discuss short term lettings](--ROOT--contact/).
 

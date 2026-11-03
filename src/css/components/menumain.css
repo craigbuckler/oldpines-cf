@@ -18,6 +18,7 @@
 
 #menumain {
 
+  display: block;
   position: fixed;
   inline-size: fit-content;
   max-inline-size: none;
@@ -37,22 +38,18 @@
   border-inline-start: 1px solid #000;
   box-shadow: -1px 0 3px var(--color-dark);
   transform: translateX(0);
-  transition-property: block transform;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-out;
-	transition-behavior: allow-discrete;
+  transition: transform 0.2s ease-out, display 0.2s allow-discrete;
+  z-index: 1;
 
   &[open] {
 
     @starting-style {
-      display: block;
       transform: translateX(100%);
     }
 
   }
 
   &:not([open]) {
-    display: none;
     transform: translateX(100%);
   }
 
@@ -71,7 +68,7 @@
   }
 
   button {
-    margin-inline: auto 1em;
+    margin-inline: auto 0;
   }
 
   button svg {

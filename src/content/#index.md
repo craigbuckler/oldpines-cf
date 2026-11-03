@@ -6,9 +6,9 @@ slideshow: hotel
 priority: 1.0
 ---
 
-We are open and taking bookings for the 2026 season&hellip;
+Old Pines has closed for the winter but we are taking bookings for the 2027 season&hellip;
 
-<p><a href="--ROOT--rooms/booking/" class="button">book for 2026</a></p>
+<p><a href="--ROOT--rooms/booking/" class="button">book for 2027</a></p>
 
 Welcome to Old Pines. We are a small [hotel](--ROOT--rooms/) and [restaurant](--ROOT--restaurant/) set in seven acres of ancient Scots pine trees just north of Spean Bridge, near Fort William, in the Highlands of Scotland with [spectacular views](--ROOT--gallery/) of the Ben Nevis mountain range.
 
@@ -64,9 +64,9 @@ Thank you to all our customers for their complimentary reviews of Old Pines Hote
 
 * Booking.com -- [9.0 out of 10](https://www.booking.com/hotel/gb/oldpineshotel.en-gb.html#tab-reviews)
 
-* Tripadvisor -- [4.5 out of 5](https://www.tripadvisor.co.uk/Hotel_Review-g635692-d304682-Reviews-Old_Pines_Hotel_and_Restaurant-Spean_Bridge_Lochaber_Scottish_Highlands_Scotland.html#REVIEWS)
+* Tripadvisor -- [4.7 out of 5](https://www.tripadvisor.co.uk/Hotel_Review-g635692-d304682-Reviews-Old_Pines_Hotel_and_Restaurant-Spean_Bridge_Lochaber_Scottish_Highlands_Scotland.html#REVIEWS)
 
-* Trivago -- [9.2 out of 10](https://www.trivago.co.uk/spean-bridge-359271/hotel/old-pines-604336)
+* Trivago -- [9.3 out of 10](https://www.trivago.co.uk/spean-bridge-359271/hotel/old-pines-604336)
 
 * Wego -- [9.3 out of 10](https://www.wegotravel.co.uk/hotels/searches/96129/2025-03-05/2025-03-06/1/2/1114683)
 
